@@ -19,7 +19,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class JsonUserFileService implements FileUserExtractorService, FileUserAdderService {
-    @Value("${users.token.file.path:users_token.json}")
+    @Value("${users.token.file.path:./users_token.json}")
     private String usersFilePath;
 
     @Override

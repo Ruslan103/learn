@@ -19,7 +19,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class JsonFileUserWordLearnService implements FileUserWordLearnService {
-    @Value("${learn_words.file.path:learn_words.json}")
+    @Value("${learn_words.file.path:./learn_words.json}")
     private String learnWordFilePath;
 
     @Override

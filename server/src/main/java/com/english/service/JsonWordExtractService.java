@@ -15,7 +15,7 @@ import java.util.List;
 
 @Service
 public class JsonWordExtractService implements WordExtractService {
-    @Value("${words.file.path:words.json}")
+    @Value("${words.file.path:./words.json}")
     private String fileName;
 
     @Override
